@@ -1,0 +1,77 @@
+    1  ls
+    2  cd""foldername
+    3  cd''foldername
+    4  cd ls foldername
+    5  cd document
+    6  cd documents
+    7  cd ..
+    8  cd documents
+    9  ls
+   10  ls - al
+   11  ls-al
+   12  ls -al
+   13  mkdir Macabuag
+   14  mkdir Macabuag
+   15  cd Macabuag
+   16  touch test.txt
+   17  touch readme.md
+   18  rm test.txt
+   19  cd ..
+   20  touch test.txt
+   21  touch readme.md
+   22  rm test.txt
+   23  mkdir Macabuag
+   24  ls
+   25  cd..
+   26  cd ..
+   27  git clone url
+   28  mkdir Macabuag
+   29  history
+   30  touch history.txt
+   31  history.txt
+   32  touch history.txt
+   33  start history.txt
+   34  git add history.txt
+   35  git status
+   36  cd document
+   37  cd documents
+   38  cd ..
+   39  cd documents
+   40  mkdir Macabuag
+   41  touch history.txt
+   42  start history.txt
+   43  git add history.txt
+   44  git clone https://github.com/macabuagdrumbi-hub/Macabuag.git
+   45  touch history.txt
+   46  start history.txt
+   47  git add history.txt
+   48  git add history.txt
+   49  git add
+   50  ls
+   51  cd foldername
+   52  cd Macabuag
+   53  cd documents
+   54  ls-al
+   55  ls -al
+   56  as -al
+   57  ls -al
+   58  mkdir Macabuag
+   59  touch test.txt
+   60  touch readme.md
+   61  rm test.txt
+   62  git config --global user.name "Inceedsh"
+   63  git status
+   64  git restore
+   65  git status
+   66  git add .
+   67  git status
+   68  git commit -m "3rd commit"
+   69  git config --global user.name "Ambi Macabuag"
+   70  git config --global user.email "macabuagdrumbi@gmail.com"
+   71  git config --global user.name
+   72  git config --global user.email
+   73  git add
+   74  touch history.txt
+   75  start history.txt
+   76  history
+
