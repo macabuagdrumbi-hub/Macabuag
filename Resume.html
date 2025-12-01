@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #eee;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">My Website</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <a href="lesson1.html">Lesson 1</a>
+        <a href="lesson2.html">Lesson 2</a>
+        <a href="lesson3.html">Lesson 3</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1>WELCOME!</h1>
+    <section class="intro">
+     <h2>Hello, I'm <span> Jeremy Mejia</span></h2>
+        <p>
+          I'm a passionate web developer who enjoys building creative, 
+          user-friendly websites. I specialize in HTML, CSS, and JavaScript 
+          and love learning new technologies that help bring ideas to life.
+        </p>
+        <p>
+          In my free time, I enjoy design, photography, and working on personal coding projects.        
+        </p>
+
+        <a href="Resume.html" class="contact-btn">More</a>
+  </section>
+
+  <section class="gallery-container">
+  <h1>My Photo Gallery</h1>
+    <div class="gallery">
+      <img src="akoto.jpg" alt="Image 1">
+      <img src="fam.jpeg" alt="Image 2">
+      <img src="ele.photo.jpeg" alt="Image 3">
+      <img src="childhood photo.jpeg" alt="Image 4">
+      <img src="swimming.jpeg" alt="Image 5">
+      <img src="bg1.jpg" alt="Image 6">
+      <img src="mongi.jpeg" alt="Image 7">
+      <img src="baliw.jpeg" alt="Image 8">
+</section>
+
+       <h2>BSIT - 2nd Year Class Schedule (Section A)</h2>
+
+  <table>
+    <tr>
+      <th>Sched Code</th>
+      <th>Subject</th>
+      <th>Days</th>
+      <th>Time</th>
+      <th>Room</th>
+      <th>Instructor</th>
+    </tr>
+    <tr>
+      <td>FIL 12</td>
+      <td>Maunlad na Pananaliksik sa Piling Larangan</td>
+      <td>Tuesday</td>
+      <td>4:00 - 7:00 PM</td>
+      <td>Room 4</td>
+      <td>RIZARDO</td>
+    </tr>
+    <tr>
+      <td>SS 102</td>
+      <td>The Contemporary World</td>
+      <td>Wednesday</td>
+      <td>10:30 AM - 1:30 PM</td>
+      <td class="no-room">NO ROOM</td>
+      <td>ESPINO</td>
+    </tr>
+    <tr>
+      <td>CIS 212</td>
+      <td>Data Structure and Algorithms - Lecture</td>
+      <td>Friday</td>
+      <td>8:00 - 10:00 AM</td>
+      <td>CL 3</td>
+      <td>ORLANDA</td>
+    </tr>
+    <tr>
+      <td>CIS 212</td>
+      <td>Data Structure and Algorithms - Lab</td>
+      <td>Friday</td>
+      <td>10:00 - 1:00 PM</td>
+      <td>CL 3</td>
+      <td>ORLANDA</td>
+    </tr>
+    <tr>
+      <td>IT211</td>
+      <td>Application Dev & Emerging Tech - Lecture</td>
+      <td>Wednesday</td>
+      <td>3:00 - 5:00 PM</td>
+      <td>CL 3</td>
+      <td>NIBATO</td>
+    </tr>
+    <tr>
+      <td>IT211</td>
+      <td>Application Dev & Emerging Tech - Lab</td>
+      <td>Wednesday</td>
+      <td>5:00 - 8:00 PM</td>
+      <td>CL 3</td>
+      <td>NIBATO</td>
+    </tr>
+    <tr>
+      <td>IT212</td>
+      <td>Intro to Human-Computer Interaction</td>
+      <td>Friday</td>
+      <td>1:00 - 3:00 PM</td>
+      <td>CL 3</td>
+      <td>ORIBIA</td>
+    </tr>
+    <tr>
+      <td>IT212</td>
+      <td>Intro to Human-Computer Interaction - Lab</td>
+      <td>Friday</td>
+      <td>3:00 - 6:00 PM</td>
+      <td>CL 3</td>
+      <td>ORIBIA</td>
+    </tr>
+    <tr>
+      <td>PE 21</td>
+      <td>PATH - FITT III (Specialized Sports)</td>
+      <td>Tuesday</td>
+      <td>2:00 - 4:00 PM</td>
+      <td>New BLDG 503</td>
+      <td>SORETA</td>
+    </tr>
+    <tr>
+      <td>OLIVARIAN 201</td>
+      <td>Critical Thinking Development</td>
+      <td>Tuesday</td>
+      <td>11:00 AM - 1:00 PM</td>
+      <td class="no-room">NO ROOM</td>
+      <td>VALENZUELA</td>
+    </tr>
+  </table>
+
+
+  <form action="#" method="post">
+      <h1>CONTACT US</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+
+
+  <h2 align="center">Our Location</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15451.207310227055!2d121.02035908751223!3d14.4960629190676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf1d95801c29%3A0x9815a2b0e684a8c7!2sSun%20Valley%2C%20Para%C3%B1aque%2C%201709%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1757921514314!5m2!1sen!2sph"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>">
+  </iframe>
+
+  
+  <h2  align="center">My Introduction Video</h2>
+  <div>
+  <video controls >
+    <source src="Flow G - GOTCHU (Official Music Video).mp4" type="">
+    Your browser does not support the video tag.
+  </video>
+</div>
+  
+  <h2 align="center">Audio Message</h2>
+  <div>
+  <audio controls >
+    <source src="Flow G - GOTCHU (Official Music Video).mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+  <footer>
+    &copy; 2025 MEJIA, JEREMY D.
+  </footer>
+
+  
+  <script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
+    const alertMessage = 
+      `Name: ${name || '[empty]'}\n` +
+      `Email: ${email || '[empty]'}\n` +
+      `Subject: ${subject || '[empty]'}\n` +
+      `Message: ${message || '[empty]'}`;
+    alert(alertMessage);
+  });
+</script>
+    </div>
+
+      </main>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      toggleBtn.textContent = nav.classList.contains('active') ? '✕' : '☰';
+    });
+  </script>
+</body>
+</html>
